@@ -37,7 +37,7 @@ The title effect holds on every engine (no brand in title → brand in title, Ja
 
 - **Source:** Reach's production data. Tracked prompts for client brands, run on four engines: ChatGPT, Perplexity, Google AI Mode and Google AI Overviews. Read-only, aggregate statistics only.
 - **Unit:** a brand × answer pair.
-- **Engine-level sample (`ghost_citation_rates_by_engine`, `mention_citation_matrix_by_engine`):** 119,848 brand × answer pairs across all 75 active client workspaces, 4 engines, 12 sampled days between Jun 3 and Aug 19, 2026.
+- **Engine-level sample (`ghost_citation_rates_by_engine`, `mention_citation_matrix_by_engine`):** 119,848 brand × answer pairs across all active client workspaces, 4 engines, 12 sampled days between Jun 3 and Aug 19, 2026.
 - **Page-level sample (title analysis):** answers that cite exactly one of the brand's own pages ("single own page"). About 46,000 page × answer pairs for Jun 1 – Aug 21 (43 brands, every day except Jun 2 and Aug 5–6). Extended back to Jan 1 for about 71,000 pairs in total.
 - **"Named":** Reach's answer-extraction flag (`is_mentioned`), not text matching, so generic brand names don't distort it.
 - **"Links to the brand":** the answer cites a URL on the brand's own domain.
