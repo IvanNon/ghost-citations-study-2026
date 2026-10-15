@@ -1,0 +1,6 @@
+﻿"engine","answers","named_citation_pct","mention_only_pct","ghost_citation_pct","invisible_pct","named_total_pct","linked_total_pct","share_of_mentions_with_link_pct","share_of_links_without_mention_pct"
+"ALL","119848","10.6","5.1","8","76.2","15.7","18.7","67.6","43"
+"AIMODE","29615","14.2","5.6","8.1","72.1","19.8","22.4","71.9","36.4"
+"AIOVERVIEW","29622","10.6","4.8","7","77.6","15.4","17.5","68.6","39.8"
+"CHATGPT","31026","9","5.8","6.7","78.4","14.8","15.7","60.7","42.7"
+"PERPLEXITY","29585","8.8","4.1","10.4","76.7","13","19.2","68","54"
