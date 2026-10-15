@@ -4,7 +4,16 @@
 
 Methodology and aggregated data for the Ghost Citations study by [Ivan Nonveiller](https://github.com/IvanNon) at [Reach](https://usereach.ai). This repo holds only aggregated, anonymized tables. No brand names, prompts, answer text or page URLs.
 
-**Full write-up:** [ghost-citations-study-2026.pdf](ghost-citations-study-2026.pdf)
+**Full write-up:** [ghost-citations-study-2026.pdf](https://github.com/IvanNon/ghost-citations-study-2026/raw/main/ghost-citations-study-2026.pdf)
+
+## Preview
+
+[![Cover](images/page-01.jpg)](ghost-citations-study-2026.pdf?raw=true)
+[![Ghost rate without vs with brand in title](images/page-03.jpg)](ghost-citations-study-2026.pdf?raw=true)
+[![By page type](images/page-05.jpg)](ghost-citations-study-2026.pdf?raw=true)
+[![By AI engine](images/page-06.jpg)](ghost-citations-study-2026.pdf?raw=true)
+
+Click any page to download the full 12-page PDF. All pages are in [`images/`](images).
 
 ## Definition
 
