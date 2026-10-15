@@ -23,11 +23,13 @@ A **ghost citation** is an AI answer that links to a brand's own domain but does
 
 | Finding | Number |
 |---|---|
-| Answers that link to the brand's site but don't name it | **43%** (9,624 of 22,375) |
+| Answers that link to the brand's site but don't name it | **43%** (9,624 of 22,375, 12-day engine-level sample) |
 | Ghost answers that name *other* brands instead | **87%** |
 | Ghost rate when the cited own page is a listicle ("best / top / vs / alternatives") vs other own pages | 50% vs 34% |
-| Ghost rate, brand **not** in the cited page's title vs **in** the title (Jan–Aug, pooled) | **42.9% vs 12.2%** |
+| Ghost rate, brand **not** in the cited page's title vs **in** the title (Jan–Aug, pooled) | **42.9% vs 12.2%** (page-level sample) |
 | Same comparison, within brands (Mantel-Haenszel stratified) | **about 60% fewer** ghost citations |
+
+The two "43%" figures come from different samples and measure different things. The 43% headline is the share of answers that link to the brand's site without naming it, from the 12 sampled days in Jun–Aug. The 42.9% is the ghost rate for cited own pages with no brand in the title, from the Jan–Aug page-level sample. They round to the same number by coincidence.
 
 By engine (answers linking to the brand's site that don't name it): AI Mode 36%, AI Overviews 40%, ChatGPT 43%, Perplexity 54%.
 
@@ -43,7 +45,7 @@ The title effect holds on every engine (no brand in title → brand in title, Ja
 - **"Links to the brand":** the answer cites a URL on the brand's own domain.
 - **Listicle:** URL-pattern match for "best", "top", "vs", "alternatives".
 - **"Brand in title":** the brand name appears in the cited page's `<title>`, taken from Reach's stored snapshot of the page.
-- **Within-brand robustness check:** every 2nd day Jan 3 – Aug 21 (456 engine-days, 36,400 page citations), 40 brands. Among the 20 brands with at least 10 citations in both groups, brand-in-title pages were ghosted less often in 17 of 20 (two-sided sign test p = 0.003). Leave-one-brand-out keeps the pooled reduction between 64.5% and 78.8%.
+- **Within-brand robustness check:** every 2nd day Jan 3 – Aug 21 (456 engine-days, 36,400 page citations), 40 brands. Among the 20 brands with at least 10 citations in both groups (about 20.8K citations across those 20 brands, not the 71K set), brand-in-title pages were ghosted less often in 17 of 20 (two-sided sign test p = 0.003). Leave-one-brand-out keeps the pooled reduction between 64.5% and 78.8%.
 
 ## Data
 
@@ -56,7 +58,7 @@ All files are in [`data/`](data). Percentages are in percent, not fractions.
 | `ghost_rate_by_title_jan_to_aug.csv` | Ghost rate by brand-in-title, listicle and engine, for Jan–May, Jun–Aug and combined. |
 | `ghost_rate_by_title_monthly.csv` | Monthly ghost rate with and without the brand in the title. August is a partial month. |
 | `ghost_rate_by_brand_prominence.csv` | Ghost rate by brand in title, brand in intro and mention-count bucket. `ALL_PAIRS` covers every cited own page per answer. `SINGLE_*` covers answers citing exactly one own page, overall and per engine. The two scopes give different absolute rates by design. |
-| `within_brand_check_anonymised.csv` | Per-brand ghost rates with and without the brand in the title, for the 20 brands with the most brand-in-title citations. Brands are relabelled A–T in order of volume. |
+| `within_brand_check_anonymised.csv` | Per-brand ghost rates with and without the brand in the title, for the 20 brands with at least 10 citations in both groups, from the every-2nd-day sample (about 20.8K citations, not the 71K set). Brands are relabelled A–T in order of brand-in-title volume. |
 
 ## Caveats
 
@@ -69,8 +71,14 @@ All files are in [`data/`](data). Percentages are in percent, not fractions.
 - **Sample.** Reach client brands only, mostly B2B/SaaS in Portugal and the US. Some prompts are branded. Perplexity's mid-June to mid-July missing-citations issue lowers counts but not the ratios much.
 - **Trend.** The no-brand-title ghost rate rises from about 30–37% (Jan–May) to about 45–48% (Jun–Aug). It may reflect brand mix and a July onboarding wave rather than a real trend.
 
+## License
+
+Content in this repo (README, data, PDF and images) is licensed under [CC BY 4.0](LICENSE). Share and adapt it with attribution.
+
 ## Cite
 
 Nonveiller, I. (2026). *Ghost Citations Study 2026*. https://github.com/IvanNon/ghost-citations-study-2026
+
+GitHub's "Cite this repository" button is powered by [`CITATION.cff`](CITATION.cff).
 
 Questions or challenges: open an issue.

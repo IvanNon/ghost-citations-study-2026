@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this data or methodology, please cite it as below."
+title: "Ghost Citations Study 2026"
+type: dataset
+authors:
+  - family-names: Nonveiller
+    given-names: Ivan
+    affiliation: Reach
+version: "1.0"
+date-released: 2026-10-14
+license: CC-BY-4.0
+repository-code: "https://github.com/IvanNon/ghost-citations-study-2026"
+abstract: "Methodology and aggregated, anonymized data on AI answers that link to a brand's own site without naming the brand (ghost citations), across ChatGPT, Perplexity, Google AI Mode and Google AI Overviews, Jan-Aug 2026."
+keywords:
+  - ai-search
+  - geo
+  - aeo
+  - llm-citations
