@@ -4,6 +4,8 @@
 
 Methodology and aggregated data for the Ghost Citations study by [Ivan Nonveiller](https://github.com/IvanNon) at [Reach](https://usereach.ai). This repo holds only aggregated, anonymized tables. No brand names, prompts, answer text or page URLs.
 
+**Full write-up:** [ghost-citations-study-2026.pdf](ghost-citations-study-2026.pdf)
+
 ## Definition
 
 A **ghost citation** is an AI answer that links to a brand's own domain but does not name the brand in the answer text.
